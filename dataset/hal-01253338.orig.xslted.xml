@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:hal="http://hal.archives-ouvertes.fr/">
+  
+  <text>
+      <body>
+         <listBibl>
+            <biblFull>
+               <editionStmt>
+                  <edition>
+                     <date type="whenDownloaded">2018-04-13</date>
+                     <date type="whenCreated">2018-04-20</date>
+                  </edition>
+               </editionStmt>
+               <sourceDesc>
+                  <biblStruct>
+                     <analytic>
+                        <title xml:lang="en">Familial occurrence and heritable connective tissue disorders in cervical artery dissection.</title>
+                        <author role="aut">
+                           <persName>
+                              <forename type="first">Stéphanie</forename>
+                              <surname>Debette</surname>
+                           </persName>
+                           <idno type="halAuthorId">300623</idno>
+                           <affiliation ref="#struct-431520"/>
+                        </author>
+                        <author role="aut">
+                           <persName>
+                              <forename type="first">Barbara</forename>
+                              <surname>Goeggel Simonetti</surname>
+                           </persName>
+                           <idno type="halAuthorId">1269087</idno>
+                        </author>
+                        <author role="aut">
+                           <persName>
+                              <forename type="first">Sabrina</forename>
+                              <surname>Schilling</surname>
+                           </persName>
+                           <idno type="halAuthorId">1179741</idno>
+                           <affiliation ref="#struct-444054"/>
+                        </author>
+                        <author role="aut">
+                           <persName>
+                              <forename type="first">Juan José</forename>
+                              <surname>Martin</surname>
+                           </persName>
+                           <idno type="halAuthorId">1269088</idno>
+                           <affiliation ref="#struct-119523"/>
+                        </author>
+                        <author role="aut">
+                           <persName>
+                              <forename type="first">Manja</forename>
+                              <surname>Kloss</surname>
+                           </persName>
+                           <idno type="halAuthorId">410344</idno>
+                        </author>
+                        <author role="aut">
+                           <persName>
+                              <forename type="first">Hakan</forename>
+                              <surname>Sarikaya</surname>
+                           </persName>
+                           <idno type="halAuthorId">1269089</idno>
+                        </author>
+                        <author role="aut">
+                           <persName>
+                              <forename type="first">Ingrid</forename>
+                              <surname>Hausser</surname>
+                           </persName>
+                           <idno type="halAuthorId">586504</idno>
+                           <affiliation ref="#struct-236921"/>
+                        </author>
+                        <author role="aut">
+                           <persName>
+                              <forename type="first">Stefan</forename>
+                              <surname>Engelter</surname>
+                           </persName>
+                           <idno type="halAuthorId">1269090</idno>
+                        </author>
+                        <author role="aut">
+                           <persName>
+                              <forename type="first">Tiina M</forename>
+                              <surname>Metso</surname>
+                           </persName>
+                           <idno type="halAuthorId">1269057</idno>
+                        </author>
+                        <author role="aut">
+                           <persName>
+                              <forename type="first">Alessandro</forename>
+                              <surname>Pezzini</surname>
+                           </persName>
+                           <idno type="halAuthorId">822551</idno>
+                        </author>
+                        <author role="aut">
+                           <persName>
+                              <forename type="first">Vincent</forename>
+                              <surname>Thijs</surname>
+                           </persName>
+                           <idno type="halAuthorId">822560</idno>
+                        </author>
+                        <author role="aut">
+                           <persName>
+                              <forename type="first">Emmanuel</forename>
+                              <surname>Touzé</surname>
+                           </persName>
+                           <idno type="halAuthorId">300429</idno>
+                        </author>
+                        <author role="aut">
+                           <persName>
+                              <forename type="first">Stefano</forename>
+                              <surname>Paolucci</surname>
+                           </persName>
+                           <idno type="halAuthorId">1269091</idno>
+                           <affiliation ref="#struct-265431"/>
+                        </author>
+                        <author role="aut">
+                           <persName>
+                              <forename type="first">Paolo</forename>
+                              <surname>Costa</surname>
+                           </persName>
+                           <idno type="halAuthorId">361368</idno>
+                        </author>
+                        <author role="aut">
+                           <persName>
+                              <forename type="first">Maria</forename>
+                              <surname>Sessa</surname>
+                           </persName>
+                           <idno type="halAuthorId">822562</idno>
+                        </author>
+                        <author role="aut">
+                           <persName>
+                              <forename type="first">Yves</forename>
+                              <surname>Samson</surname>
+                           </persName>
+                           <idno type="halAuthorId">51869</idno>
+                           <affiliation ref="#struct-218549"/>
+                        </author>
+                        <author role="aut">
+                           <persName>
+                              <forename type="first">Yannick</forename>
+                              <surname>Béjot</surname>
+                           </persName>
+                           <idno type="halAuthorId">603444</idno>
+                           <affiliation ref="#struct-444681"/>
+                        </author>
+                        <author role="aut">
+                           <persName>
+                              <forename type="first">Ayse</forename>
+                              <surname>Altintas</surname>
+                           </persName>
+                           <idno type="halAuthorId">1269092</idno>
+                        </author>
+                        <author role="aut">
+                           <persName>
+                              <forename type="first">Antti J</forename>
+                              <surname>Metso</surname>
+                           </persName>
+                           <idno type="halAuthorId">1269075</idno>
+                        </author>
+                        <author role="aut">
+                           <persName>
+                              <forename type="first">Dominique</forename>
+                              <surname>Hervé</surname>
+                           </persName>
+                           <idno type="halAuthorId">375838</idno>
+                        </author>
+                        <author role="aut">
+                           <persName>
+                              <forename type="first">Christoph</forename>
+                              <surname>Lichy</surname>
+                           </persName>
+                           <idno type="halAuthorId">1269076</idno>
+                        </author>
+                        <author role="aut">
+                           <persName>
+                              <forename type="first">Simon</forename>
+                              <surname>Jung</surname>
+                           </persName>
+                           <idno type="halAuthorId">1269093</idno>
+                           <affiliation ref="#struct-1165"/>
+                        </author>
+                        <author role="aut">
+                           <persName>
+                              <forename type="first">Urs</forename>
+                              <surname>Fischer</surname>
+                           </persName>
+                           <idno type="halAuthorId">959380</idno>
+                           <affiliation ref="#struct-256306"/>
+                        </author>
+                        <author role="aut">
+                           <persName>
+                              <forename type="first">Chantal</forename>
+                              <surname>Lamy</surname>
+                           </persName>
+                           <idno type="halAuthorId">822557</idno>
+                           <affiliation ref="#struct-178494"/>
+                        </author>
+                        <author role="aut">
+                           <persName>
+                              <forename type="first">Armin</forename>
+                              <surname>Grau</surname>
+                           </persName>
+                           <idno type="halAuthorId">1269094</idno>
+                           <affiliation ref="#struct-37835"/>
+                        </author>
+                        <author role="aut">
+                           <persName>
+                              <forename type="first">Hugues</forename>
+                              <surname>Chabriat</surname>
+                           </persName>
+                           <idno type="halAuthorId">375839</idno>
+                        </author>
+                        <author role="aut">
+                           <persName>
+                              <forename type="first">Valeria</forename>
+                              <surname>Caso</surname>
+                           </persName>
+                           <idno type="halAuthorId">822556</idno>
+                        </author>
+                        <author role="aut">
+                           <persName>
+                              <forename type="first">Philippe A</forename>
+                              <surname>Lyrer</surname>
+                           </persName>
+                           <idno type="halAuthorId">1269077</idno>
+                        </author>
+                        <author role="aut">
+                           <persName>
+                              <forename type="first">Christian</forename>
+                              <surname>Stapf</surname>
+                           </persName>
+                           <idno type="halAuthorId">1058716</idno>
+                           <affiliation ref="#struct-262143"/>
+                        </author>
+                        <author role="aut">
+                           <persName>
+                              <forename type="first">Turgut</forename>
+                              <surname>Tatlisumak</surname>
+                           </persName>
+                           <idno type="halAuthorId">822565</idno>
+                        </author>
+                        <author role="aut">
+                           <persName>
+                              <forename type="first">Tobias</forename>
+                              <surname>Brandt</surname>
+                           </persName>
+                           <idno type="halAuthorId">1269078</idno>
+                        </author>
+                        <author role="aut">
+                           <persName>
+                              <forename type="first">Elisabeth</forename>
+                              <surname>Tournier-Lasserve</surname>
+                           </persName>
+                           <idno type="halAuthorId">170639</idno>
+                        </author>
+                        <author role="aut">
+                           <persName>
+                              <forename type="first">Dominique P</forename>
+                              <surname>Germain</surname>
+                           </persName>
+                           <idno type="halAuthorId">1269095</idno>
+                           <affiliation ref="#struct-300090"/>
+                        </author>
+                        <author role="aut">
+                           <persName>
+                              <forename type="first">Michael</forename>
+                              <surname>Frank</surname>
+                           </persName>
+                           <idno type="halAuthorId">366269</idno>
+                           <affiliation ref="#struct-446053"/>
+                        </author>
+                        <author role="aut">
+                           <persName>
+                              <forename type="first">Ralf W</forename>
+                              <surname>Baumgartner</surname>
+                           </persName>
+                           <idno type="halAuthorId">1269096</idno>
+                        </author>
+                        <author role="aut">
+                           <persName>
+                              <forename type="first">Caspar</forename>
+                              <surname>Grond-Ginsbach</surname>
+                           </persName>
+                           <idno type="halAuthorId">822558</idno>
+                        </author>
+                        <author role="aut">
+                           <persName>
+                              <forename type="first">Marie-Germaine</forename>
+                              <surname>Bousser</surname>
+                           </persName>
+                           <idno type="halAuthorId">212809</idno>
+                           <affiliation ref="#struct-300301"/>
+                        </author>
+                        <author role="aut">
+                           <persName>
+                              <forename type="first">Didier</forename>
+                              <surname>Leys</surname>
+                           </persName>
+                           <idno type="halAuthorId">454048</idno>
+                        </author>
+                        <author role="aut">
+                           <persName>
+                              <forename type="first">Jean</forename>
+                              <surname>Dallongeville</surname>
+                           </persName>
+                           <idno type="halAuthorId">118966</idno>
+                           <affiliation ref="#struct-435607"/>
+                        </author>
+                        <author role="aut">
+                           <persName>
+                              <forename type="first">Anna</forename>
+                              <surname>Bersano</surname>
+                           </persName>
+                           <idno type="halAuthorId">822554</idno>
+                        </author>
+                        <author role="aut">
+                           <persName>
+                              <forename type="first">Marcel</forename>
+                              <surname>Arnold</surname>
+                           </persName>
+                           <idno type="halAuthorId">1269097</idno>
+                           <affiliation ref="#struct-199954"/>
+                        </author>
+                     </analytic>
+                     <monogr>
+                        <idno type="halJournalId" status="VALID">17388</idno>
+                        <idno type="issn">0028-3878</idno>
+                        <idno type="eissn">1526-632X</idno>
+                        <title level="j">Neurology</title>
+                        <imprint>
+                           <publisher>American Academy of Neurology</publisher>
+                           <biblScope unit="volume">83</biblScope>
+                           <biblScope unit="issue">22</biblScope>
+                           <biblScope unit="pp">2023-31</biblScope>
+                           <date type="datePub">2014-11-25</date>
+                        </imprint>
+                     </monogr>
+                     <idno type="halId">hal-01253338</idno>
+                     <idno type="pubmed">25355833</idno>
+                     <idno type="pubmedcentral">PMC4248448</idno>
+                  </biblStruct>
+               </sourceDesc>
+               <profileDesc>
+                  <langUsage>
+                     <language ident="en">English</language>
+                  </langUsage>
+                  <textClass>
+                     <classCode scheme="mesh">Adult</classCode>
+                     <classCode scheme="mesh">Cohort Studies</classCode>
+                     <classCode scheme="mesh">Connective Tissue Diseases</classCode>
+                     <classCode scheme="mesh">Female</classCode>
+                     <classCode scheme="mesh">Humans</classCode>
+                     <classCode scheme="mesh">Internationality</classCode>
+                     <classCode scheme="mesh">Male</classCode>
+                     <classCode scheme="mesh">Middle Aged</classCode>
+                     <classCode scheme="mesh">Vertebral Artery Dissection</classCode>
+                     <classCode scheme="halDomain" n="spi.signal">Engineering Sciences [physics]/Signal and Image processing</classCode>
+                     <classCode scheme="halDomain" n="info.info-cv">Computer Science [cs]/Computer Vision and Pattern Recognition [cs.CV]</classCode>
+                     <classCode scheme="halDomain" n="info.info-im">Computer Science [cs]/Medical Imaging</classCode>
+                     <classCode scheme="halDomain" n="info.info-ti">Computer Science [cs]/Image Processing</classCode>
+                     <classCode scheme="halDomain" n="sdv.ib.ima">Life Sciences [q-bio]/Bioengineering/Imaging</classCode>
+                     <classCode scheme="halDomain" n="sdv.neu.nb">Life Sciences [q-bio]/Neurons and Cognition [q-bio.NC]/Neurobiology</classCode>
+                     <classCode scheme="typology">ART</classCode>
+                  </textClass>
+                  <abstract xml:lang="en">In a large series of patients with cervical artery dissection (CeAD), a major cause of ischemic stroke in young and middle-aged adults, we aimed to examine frequencies and correlates of family history of CeAD and of inherited connective tissue disorders. We combined data from 2 large international multicenter cohorts of consecutive patients with CeAD in 23 neurologic departments participating in the CADISP-plus consortium, following a standardized protocol. Frequency of reported family history of CeAD and of inherited connective tissue disorders was assessed. Putative risk factors, baseline features, and 3-month outcome were compared between groups. Among 1,934 consecutive patients with CeAD, 20 patients (1.0%, 95% confidence interval: 0.6%-1.5%) from 17 families (0.9%, 0.5%-1.3%) had a family history of CeAD. Family history of CeAD was significantly more frequent in patients with carotid location of the dissection and elevated cholesterol levels. Two patients without a family history of CeAD had vascular Ehlers-Danlos syndrome with a mutation in COL3A1. This diagnosis was suspected in 2 additional patients, but COL3A1 sequencing was negative. Two patients were diagnosed with classic and hypermobile Ehlers-Danlos syndrome, one patient with Marfan syndrome, and one with osteogenesis imperfecta, based on clinical criteria only. In this largest series of patients with CeAD to date, family history of symptomatic CeAD was rare and inherited connective tissue disorders seemed exceptional. This finding supports the notion that CeAD is a multifactorial disease in the vast majority of cases. </abstract>
+               </profileDesc>
+            </biblFull>
+         </listBibl>
+      </body>
+    
+  </text>
+</TEI>
