@@ -9,6 +9,15 @@
     
     <xsl:output indent="yes"/>
     
+    
+    <xsl:template match="abstract">
+        
+        <xsl:if test="list or p or table"><abstract><xsl:apply-templates/></abstract></xsl:if>
+        <xsl:if test="not(list or p or table)">
+            <abstract><p><xsl:apply-templates/></p></abstract>
+        </xsl:if>
+    </xsl:template>
+    
     <xsl:template match="biblFull">
         <biblFull>
             <xsl:apply-templates select="editionStmt"/>
@@ -48,10 +57,35 @@
     </xsl:template>
     
     <!-- ne pas reporter les éléments suivants -->
-    <xsl:template match="teiHeader | back"></xsl:template>
+    <xsl:template match="teiHeader">
+        <teiHeader>
+            <fileDesc>
+                <titleStmt>
+                    <title>Conditor platform version of <xsl:value-of select="/TEI/text/body/listBibl/biblFull/publicationStmt/idno[@type='halId']"/> document. This version derivate from the HAL original version.</title>
+                </titleStmt>
+                <publicationStmt>
+                    <distributor>Conditor</distributor>
+                    <availability status="restricted">
+                        <p>Access limited to granted organizations</p>
+                        <!--<licence target="http://creativecommons.org/licenses/by/4.0/">Distributed under a Creative Commons Attribution 4.0 International License</licence>-->
+                    </availability>
+                    <date when="{format-date(current-date(),'[Y0001]-[M01]-[D01]')}"/>
+                </publicationStmt>
+                <sourceDesc>
+                    <p part="N">Conditor platform</p>
+                </sourceDesc>
+            </fileDesc>
+        </teiHeader>
+    </xsl:template>
+    
+    <xsl:template match="back"></xsl:template>
     
     <!-- ne pas reporter les éléments dans l'espace de nommage hal -->
     <xsl:template match="hal:*"></xsl:template>
+    
+    <xsl:template match="@status">
+        <xsl:if test="string(.) = 'free' or string(.) = 'unknown' or string(.) = 'restricted'"><xsl:apply-templates/></xsl:if>
+    </xsl:template>
     
     <xsl:template match="@scheme">
         <xsl:choose>

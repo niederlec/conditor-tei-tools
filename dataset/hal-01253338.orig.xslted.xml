@@ -1,7 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
      xmlns:hal="http://hal.archives-ouvertes.fr/">
-  
+  <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Conditor platform version of hal-01253338 document. This version derivate from the HAL original version.</title>
+         </titleStmt>
+         <publicationStmt>
+            <distributor>Conditor</distributor>
+            <availability status="restricted">
+               <p>Access limited to granted organizations</p>
+            </availability>
+            <date when="2018-05-11"/>
+         </publicationStmt>
+         <sourceDesc>
+            <p part="N">Conditor platform</p>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
   <text>
       <body>
          <listBibl>
@@ -9,7 +25,7 @@
                <editionStmt>
                   <edition>
                      <date type="whenDownloaded">2018-04-13</date>
-                     <date type="whenCreated">2018-04-20</date>
+                     <date type="whenCreated">2018-05-11</date>
                   </edition>
                </editionStmt>
                <sourceDesc>
@@ -322,7 +338,7 @@
                         </author>
                      </analytic>
                      <monogr>
-                        <idno type="halJournalId" status="VALID">17388</idno>
+                        <idno type="halJournalId">17388</idno>
                         <idno type="issn">0028-3878</idno>
                         <idno type="eissn">1526-632X</idno>
                         <title level="j">Neurology</title>
@@ -361,7 +377,9 @@
                      <classCode scheme="halDomain" n="sdv.neu.nb">Life Sciences [q-bio]/Neurons and Cognition [q-bio.NC]/Neurobiology</classCode>
                      <classCode scheme="typology">ART</classCode>
                   </textClass>
-                  <abstract xml:lang="en">In a large series of patients with cervical artery dissection (CeAD), a major cause of ischemic stroke in young and middle-aged adults, we aimed to examine frequencies and correlates of family history of CeAD and of inherited connective tissue disorders. We combined data from 2 large international multicenter cohorts of consecutive patients with CeAD in 23 neurologic departments participating in the CADISP-plus consortium, following a standardized protocol. Frequency of reported family history of CeAD and of inherited connective tissue disorders was assessed. Putative risk factors, baseline features, and 3-month outcome were compared between groups. Among 1,934 consecutive patients with CeAD, 20 patients (1.0%, 95% confidence interval: 0.6%-1.5%) from 17 families (0.9%, 0.5%-1.3%) had a family history of CeAD. Family history of CeAD was significantly more frequent in patients with carotid location of the dissection and elevated cholesterol levels. Two patients without a family history of CeAD had vascular Ehlers-Danlos syndrome with a mutation in COL3A1. This diagnosis was suspected in 2 additional patients, but COL3A1 sequencing was negative. Two patients were diagnosed with classic and hypermobile Ehlers-Danlos syndrome, one patient with Marfan syndrome, and one with osteogenesis imperfecta, based on clinical criteria only. In this largest series of patients with CeAD to date, family history of symptomatic CeAD was rare and inherited connective tissue disorders seemed exceptional. This finding supports the notion that CeAD is a multifactorial disease in the vast majority of cases. </abstract>
+                  <abstract>
+                     <p>In a large series of patients with cervical artery dissection (CeAD), a major cause of ischemic stroke in young and middle-aged adults, we aimed to examine frequencies and correlates of family history of CeAD and of inherited connective tissue disorders. We combined data from 2 large international multicenter cohorts of consecutive patients with CeAD in 23 neurologic departments participating in the CADISP-plus consortium, following a standardized protocol. Frequency of reported family history of CeAD and of inherited connective tissue disorders was assessed. Putative risk factors, baseline features, and 3-month outcome were compared between groups. Among 1,934 consecutive patients with CeAD, 20 patients (1.0%, 95% confidence interval: 0.6%-1.5%) from 17 families (0.9%, 0.5%-1.3%) had a family history of CeAD. Family history of CeAD was significantly more frequent in patients with carotid location of the dissection and elevated cholesterol levels. Two patients without a family history of CeAD had vascular Ehlers-Danlos syndrome with a mutation in COL3A1. This diagnosis was suspected in 2 additional patients, but COL3A1 sequencing was negative. Two patients were diagnosed with classic and hypermobile Ehlers-Danlos syndrome, one patient with Marfan syndrome, and one with osteogenesis imperfecta, based on clinical criteria only. In this largest series of patients with CeAD to date, family history of symptomatic CeAD was rare and inherited connective tissue disorders seemed exceptional. This finding supports the notion that CeAD is a multifactorial disease in the vast majority of cases. </p>
+                  </abstract>
                </profileDesc>
             </biblFull>
          </listBibl>
