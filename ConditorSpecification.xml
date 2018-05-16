@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title xml:lang="fr">Spécification du schéma pivot pour le stockage des notices multi-sources de la plateforme Conditor</title>
+            <author>
+               <orgName>Conditor</orgName>
+               <persName>
+                  <forename>Claude</forename>
+                  <surname>Niederlender</surname>
+                  <affiliation><orgName>INIST-CNRS</orgName></affiliation>
+                  <email>claude.niederlender@inist.fr</email>
+               </persName>
+            </author>
+         </titleStmt>
+         <publicationStmt>
+            <p>Publication Information</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Ces spécifications dérivent du format TEI-HAL, disponibles sur Github disponibles à l'adresse : https://github.com/CCSDForge/HAL/blob/master/schema/HALSpecification.xml</p>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <schemaSpec ident="Conditor" docLang="en" prefix="tei_" xml:lang="en">
+            <moduleRef key="core" include="listBibl editor respStmt name note p biblStruct analytic monogr meeting imprint biblScope publisher pubPlace series relatedItem term measure title author email ptr date ref desc address addrLine"/>
+            <moduleRef key="tei"/>
+            <moduleRef key="header"
+               include="teiHeader fileDesc profileDesc biblFull titleStmt funder editionStmt edition publicationStmt distributor availability licence seriesStmt notesStmt sourceDesc authority profileDesc langUsage language textClass keywords classCode abstract creation idno"/>
+            <moduleRef key="textstructure" include="TEI text body"/>
+            <moduleRef key="iso-fs" except="fsdDecl"/>
+            <moduleRef key="namesdates" include="listPlace place location geo listOrg persName forename surname affiliation settlement country org listRelation relation orgName"/>
+            <moduleRef key="spoken" include="recordingStmt recording"/>
+            <moduleRef key="corpus" include="particDesc"/>
+            
+            <elementSpec ident="TEI" mode="change">
+               <content>
+                  <sequence>
+                     <elementRef key="teiHeader" minOccurs="0" maxOccurs="1"/>
+                     <classRef key="model.resourceLike" minOccurs="0" maxOccurs="unbounded"/>
+                  </sequence>
+               </content>
+            </elementSpec>
+
+            <elementSpec ident="biblFull" mode="change">
+               <content>
+                  <sequence>
+                     <elementRef key="editionStmt" minOccurs="0" maxOccurs="unbounded"/>
+                     <elementRef key="sourceDesc" minOccurs="0" maxOccurs="unbounded"/>
+                     <elementRef key="profileDesc" minOccurs="0" maxOccurs="unbounded"/>
+                  </sequence>
+                  <!--<alternate>
+                     <sequence>
+                        <sequence>
+                           <elementRef key="titleStmt" minOccurs="0"/>
+                           <elementRef key="editionStmt" minOccurs="0"/>
+                           <elementRef key="extent" minOccurs="0"/>
+                           <elementRef key="publicationStmt" minOccurs="0"/>
+                           <elementRef key="seriesStmt" minOccurs="0"/>
+                           <elementRef key="notesStmt" minOccurs="0"/>
+                        </sequence>
+                        <elementRef key="sourceDesc" minOccurs="0" maxOccurs="unbounded"/>
+                        <elementRef key="profileDesc" minOccurs="0" maxOccurs="unbounded"/>
+                     </sequence>
+                     <sequence>
+                        <elementRef key="fileDesc"/>
+                        <elementRef key="profileDesc"/>
+                     </sequence>
+                  </alternate>-->
+               </content>
+            </elementSpec>
+            
+            <elementSpec ident="biblStruct" mode="change">
+               <content xmlns="http://www.tei-c.org/ns/1.0">
+                  <sequence>
+                     <elementRef key="analytic" minOccurs="0" maxOccurs="unbounded"></elementRef>      
+                     <sequence minOccurs="1" maxOccurs="unbounded">
+                        <elementRef key="monogr"></elementRef>
+                        <elementRef key="series" minOccurs="0" maxOccurs="unbounded"></elementRef>
+                     </sequence>
+                     <alternate minOccurs="0" maxOccurs="unbounded">
+                        <classRef key="model.noteLike"></classRef>
+                        <classRef key="model.ptrLike"></classRef>
+                        <elementRef key="relatedItem"></elementRef>
+                        <elementRef key="citedRange"></elementRef>
+                     </alternate>
+                     <elementRef key="idno" minOccurs="0" maxOccurs="unbounded"/>
+                  </sequence>
+               </content>
+            </elementSpec>
+            
+         </schemaSpec>
+      </body>
+   </text>
+</TEI>

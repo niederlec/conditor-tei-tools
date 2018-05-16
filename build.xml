@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<project>
+  
+  <target name="init">
+    <property name="datasetDir">${teiXslt}/dataset</property>
+    <property name="teiHalDir">${datasetDir}/tei-hal</property>
+    <property name="teiConditorDir">${datasetDir}/tei-conditor</property>
+    <property name="xslFile">${teiXslt}/hal2Conditor.xsl</property>
+    <property name="xsdFile">${teiXslt}/Conditor.xsd</property>
+    <property name="licenseFile">${teiConditor}/saxon.lic</property>
+  </target>
+  
+  <target name="hal2Conditor" depends="init">
+    <echo>oxygen lib dir: ${oxygenlib}</echo>
+    <echo>teiXslt dir: ${teiXslt}</echo>
+    
+    <fileset id="halXmls" dir="${teiHalDir}" includes="*.xml"/>
+    <xslt force="true" style="./hal2Conditor.xsl" destdir="${teiConditorDir}"
+      extension=".conditor.xml" useImplicitFileset="false">
+      <fileset refid="halXmls"/>
+      <factory name="net.sf.saxon.TransformerFactoryImpl"/>
+      <classpath location="${oxygenlib}/saxon9ee.jar"/>
+    </xslt>
+  </target>
+
+  <target name="conditorValid" depends="init">
+    <fileset id="conditorXmls" dir="${teiConditorDir}" includes="*.conditor.xml"/>
+    <echo>oxygen lib dir: ${oxygenlib}</echo>
+    <xmlvalidate classname="com.saxonica.ee.jaxp.ValidatingReader" classpath="${oxygenlib}/saxon9ee.jar">
+      <fileset refid="conditorXmls"/>
+      <attribute name="http://saxon.sf.net/feature/licenseFileLocation" value="${licenseFile}"/>
+    </xmlvalidate>
+    
+    <schemavalidate classname="com.saxonica.ee.jaxp.ValidatingReader" >
+      <fileset refid="conditorXmls"/>
+      <attribute name="http://xml.org/sax/features/namespaces" value="true"/>
+      <attribute name="http://saxon.sf.net/feature/licenseFileLocation" value="${licenseFile}"/>
+      <!--<classpath location="${oxygenlib}/saxon9ee.jar;${oxygenlib}/saxon.jar"/>-->
+      
+      <schema file="Conditor.xsd" namespace="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng"/>
+    </schemavalidate>
+    
+  </target>
+
+<target name="tmp">
+  <schemavalidate classname="com.saxonica.ee.jaxp.ValidatingReader" >
+    <fileset refid="conditorXmls"/>
+    <!--<attribute name="http://xml.org/sax/features/namespaces" value="false"/>-->
+    <attribute name="http://saxon.sf.net/feature/licenseFileLocation" value="${licenseFile}"/>
+    <!--<classpath location="${oxygenlib}/saxon9ee.jar;${oxygenlib}/saxon.jar"/>-->
+    
+    <schema file="Conditor.xsd" namespace="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng"/>
+  </schemavalidate>
+</target>
+  
+</project>
