@@ -1,6 +1,8 @@
-# Conditor's TEI tools
+**# Conditor's TEI tools**
 
 Tools for managing TEI-Condior format, an XML format derivated from [TEI-HAL](https://github.com/CCSDForge/HAL/tree/master/schema) format.
+
+**:warning::rotating_light: Note : These tools are work in progress and need to be tested and consolidated:rotating_light::warning:**
 
 Both TEI-Conditor an TEI-HAL are a customization of the [TEI](http://www.tei-c.org/) format. They are build with a [ODD](http://www.tei-c.org/guidelines/customization/getting-started-with-p5-odds/) representation and the [TEI ROMA tools](http://www.tei-c.org/tools/roma/).
 
